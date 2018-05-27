@@ -4,17 +4,33 @@
     <meta charset="utf-8">
     <title>Recovery Daze</title>
     <style>
-      border: none;
-      margin: 0;
-      padding: 0;
-      resize: both;
-      overflow: auto;
+      div.body {
+        width: 960px;
+        margin: auto;
+      }
+      iframe {
+        border: none;
+        margin: 0;
+        padding: 0;
+        resize: both;
+        overflow: auto;
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+      }
+      .iframe-container {
+        position: relative;
+        
+      }
     </style>
   </head>
   <body>
-    <iframe
-      frameBorder="0"
-      src="https://docs.google.com/document/d/e/2PACX-1vTiP7XzQhYWNl1mKNUhbQaphAHidhzu1vYi1QYwyKkU1aeC63MDXWGNblR0ydlaWyYJnv3WYN12Jhac/pub?embedded=true">
-    </iframe>
+    <div class="body">
+      <div class="iframe-container">
+        <iframe
+          frameBorder="0"
+          src="https://docs.google.com/document/d/e/2PACX-1vTiP7XzQhYWNl1mKNUhbQaphAHidhzu1vYi1QYwyKkU1aeC63MDXWGNblR0ydlaWyYJnv3WYN12Jhac/pub?embedded=true">
+        </iframe>
+      </div>
+    </div>
   </body>
 </html>
