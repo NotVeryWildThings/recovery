@@ -1,3 +1,5 @@
 fetch('days/1.html').then(function (response) {
-  document.querySelector('section').innerHTML = response.text();
+  response.text().then(function (text) {
+    document.querySelector('section').innerHTML = text;  
+  });
 });
