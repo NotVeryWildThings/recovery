@@ -15,8 +15,8 @@ div.body p {
   font-size: 20px;
 }
 
-.giphy {
-  margin: auto;
+.center {
+  text-align: center;
 }
 
 #disqus_thread {
