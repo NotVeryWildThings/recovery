@@ -11,6 +11,14 @@ div.body header {
   border-bottom: solid 1px #000;
 }
 
+div.body p {
+  font-size: 20px;
+}
+
+p.center {
+  text-align: center;
+}
+
 #disqus_thread {
   padding: 20px;
 }
