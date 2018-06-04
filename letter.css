@@ -23,6 +23,14 @@ div.body p {
   padding: 20px;
 }
 
+@media only screen and (min-width: 640px) {
+  .giphy-wrap {
+    width: 480px;
+    margin: auto;
+  }
+}
+
+
 @media only screen and (max-width: 480px) {
   div.body {
     width: 100%;
