@@ -57,7 +57,7 @@
           </p>
         </header>
         <div class="audio-controls">
-          <audio controls autoplay loop>
+          <audio id="bg-music" controls autoplay loop>
             <source src="assets/death.with.dignity.small.mp3" type="audio/mpeg">
           </audio>
         </div>
@@ -86,10 +86,10 @@
             and fills it with exciting new opportunities.
           </p>
           <p>
-            So here's to health and your company,
-            And one for the lasses,
-            Let's drink and be merry, all out of our glasses,
-            Let's drink and be merry, bad thoughts to refrain,
+            So here's to health and your company.
+            And one for the lasses.
+            Let's drink and be merry, all out of our glasses.
+            Let's drink and be merry, bad thoughts to refrain.
             For we may or may not ever all be here again.
           </p>
           <p>
@@ -99,22 +99,26 @@
       </article>
     </div>
     <script>
-      anime.timeline()
-        .add({
-          targets: '.ml3 .letter',
-          opacity: [0,1],
-          easing: "easeInOutQuad",
-          duration: 2250,
-          delay: function(el, i) {
-            return 150 * (i+1)
-          }
-        }).add({
-          targets: '.ml3',
-          opacity: 0,
-          duration: 1000,
-          easing: "easeOutExpo",
-          delay: 1000
-        });
+      function isPlaying(el) { return !el.paused; }
+      
+      alert(isPlaying(document.querySelector('.bg-music')));
+            
+//       anime.timeline()
+//         .add({
+//           targets: '.ml3 .letter',
+//           opacity: [0,1],
+//           easing: "easeInOutQuad",
+//           duration: 2250,
+//           delay: function(el, i) {
+//             return 150 * (i+1)
+//           }
+//         }).add({
+//           targets: '.ml3',
+//           opacity: 0,
+//           duration: 1000,
+//           easing: "easeOutExpo",
+//           delay: 1000
+//         });
     </script>
   </body>
 </html>
