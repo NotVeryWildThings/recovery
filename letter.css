@@ -20,11 +20,11 @@ div.body p {
 }
 
 ul {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 ul li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #disqus_thread {
