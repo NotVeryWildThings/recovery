@@ -19,6 +19,14 @@ div.body p {
   text-align: center;
 }
 
+ul {
+  font-size: 18px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
 #disqus_thread {
   padding: 20px;
 }
